@@ -37,12 +37,12 @@
         {{/map.source}}
       {{/if}} --}}
     {{/mapbox-gl}}
-    <div id="cd-search" class="hide-for-print">
+    {{!-- <div id="cd-search" class="hide-for-print">
       {{navigation-dropdown
           model=model
           selected=mapState.currentlySelected
           onchange=(route-action 'transitionToProfile')}}
-    </div>
+    </div> --}}
   </div>
   <div class="cell large-auto" id="page-content">
     {{outlet}}
@@ -50,9 +50,9 @@
     <footer class="site-footer text-center">
       <p>
         <strong style="display:block;margin-bottom:0.5rem;">Don't see the data you need? Have&nbsp;questions?</strong>
-        <a class="button" href="mailto:PORTAL_DL@planning.nyc.gov">{{fa-icon "envelope"}}&nbsp;Send Us an Email</a>
+        <a class="button" href="mailto:alink@opentwincities.org">{{fa-icon "envelope"}}&nbsp;Send Us an Email</a>
         <p>
-          <a href="https://github.com/NYCPlanning/labs-community-portal/issues">{{fa-icon "github"}}&nbsp;Add a GitHub Issue</a>
+          <a href="https://github.com/OpenTwinCities/tc-community-profiles/issues">{{fa-icon "github"}}&nbsp;Add a GitHub Issue</a>
         </p>
       </p>
     </footer>
