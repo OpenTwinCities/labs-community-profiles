@@ -7,8 +7,8 @@ import isCdLayer from '../utils/is-cd-layer';
 export default Controller.extend({
   mapState: service(),
   metrics: service(),
-  lat: 40.7071266,
-  lng: -74,
+  lat: 44.948822,
+  lng: -93.189029,
   zoom: 9.2,
 
   hoveredCD: '',
@@ -216,6 +216,7 @@ export default Controller.extend({
 
       const mapState = this.get('mapState');
       mapState.set('mapInstance', map);
+      console.log(this);
     },
   },
 });
