@@ -10,6 +10,6 @@ export default Mixin.create({
     this._super(...arguments); // eslint-disable-line
     const mapState = this.get('mapState');
     const geojsonDistricts = toGeojson(districts);
-    mapState.set('bounds', bbox(geojsonDistricts));
+    // mapState.set('bounds', bbox(geojsonDistricts));
   },
 });
