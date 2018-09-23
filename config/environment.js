@@ -40,7 +40,7 @@ module.exports = function(environment) {
       },
     },
     'mapbox-gl': {
-      accessToken: 'pk.eyJ1IjoiY3dob25nbnljIiwiYSI6ImNpczF1MXdrdjA4MXcycXA4ZGtyN2x5YXIifQ.3HGyME8tBs6BnljzUVIt4Q',
+      accessToken: 'pk.eyJ1IjoiYmZyaWVkbHkiLCJhIjoiV2k5ZDRoZyJ9.suhdNFpeRtxt1OTpUVc2Tw',
       // map: {
       //   style: '//raw.githubusercontent.com/NYCPlanning/labs-gl-style/master/data/style.json'
       // }
