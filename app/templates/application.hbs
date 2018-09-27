@@ -3,6 +3,7 @@
 
 <div id="main" class="grid-x">
   <div class="cell large-4 xlarge-3" id="cd-chooser">
+    {{!-- #mapbox-gl component installed and accessible via embercli --}}
     {{#mapbox-gl id='map' initOptions=(hash style='mapbox://styles/mapbox/light-v9' zoom=zoom center=(array lng lat)) mapLoaded=(action 'handleMapLoad') as |map|}}
 
       {{!-- {{#map.source sourceId='cds' source=cdSource as |source|}}
@@ -37,12 +38,6 @@
         {{/map.source}}
       {{/if}} --}}
     {{/mapbox-gl}}
-    {{!-- <div id="cd-search" class="hide-for-print">
-      {{navigation-dropdown
-          model=model
-          selected=mapState.currentlySelected
-          onchange=(route-action 'transitionToProfile')}}
-    </div> --}}
   </div>
   <div class="cell large-auto" id="page-content">
     {{outlet}}
